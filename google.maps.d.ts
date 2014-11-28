@@ -193,11 +193,11 @@ declare module google.maps {
         getCursor(): string;
         getDraggable(): boolean;
         getFlat(): boolean;
-        getIcon(): MarkerImage;
+        getIcon(): Icon;
         getMap(): Map;
         getMap(): StreetViewPanorama;
         getPosition(): LatLng;
-        getShadow(): MarkerImage;
+        getShadow(): Icon;
         getShape(): MarkerShape;
         getTitle(): string;
         getVisible(): boolean;
@@ -207,13 +207,13 @@ declare module google.maps {
         setCursor(cursor: string): void;
         setDraggable(flag: boolean): void;
         setFlat(flag: boolean): void;
-        setIcon(icon: MarkerImage): void;
+        setIcon(icon: Icon): void;
         setIcon(icon: string): void;
         setMap(map: Map): void;
         setMap(map: StreetViewPanorama): void;
         setOptions(options: MarkerOptions): void;
         setPosition(latlng: LatLng): void;
-        setShadow(shadow: MarkerImage): void;
+        setShadow(shadow: Icon): void;
         setShadow(shadow: string): void;
         setShape(shape: MarkerShape): void;
         setTitle(title: string): void;
@@ -239,7 +239,7 @@ declare module google.maps {
         zIndex?: number;
     }
 
-    export class MarkerImage {
+    export class Icon {
         constructor (url: string, size?: Size, origin?: Point, anchor?: Point, scaledSize?: Size);
         anchor: Point;
         origin: Point;
